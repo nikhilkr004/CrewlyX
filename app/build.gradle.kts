@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures{
+        viewBinding=true
+    }
 }
 
 dependencies {
@@ -45,4 +49,22 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    // sdp
+    implementation ("com.intuit.sdp:sdp-android:1.1.1")
+
+    implementation (platform("com.google.firebase:firebase-bom:32.8.1"))
+    implementation ("com.google.firebase:firebase-auth")
+    implementation ("com.google.firebase:firebase-analytics")
+
+    // OTP View
+    implementation ("com.github.aabhasr1:OtpView:v1.1.2")
+
+    // Coroutines
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
+
+    // Lifecycle components
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+
 }

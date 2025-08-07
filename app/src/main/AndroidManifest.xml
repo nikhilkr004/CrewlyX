@@ -13,6 +13,18 @@
         android:theme="@style/Theme.CrewlyX"
         tools:targetApi="31">
         <activity
+            android:name=".Activitys.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.SplashScreenActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
