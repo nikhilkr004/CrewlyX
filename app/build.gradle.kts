@@ -36,6 +36,7 @@ android {
 
     buildFeatures{
         viewBinding=true
+        renderScript= true
     }
 }
 
@@ -56,9 +57,6 @@ dependencies {
     implementation ("com.google.firebase:firebase-auth")
     implementation ("com.google.firebase:firebase-analytics")
 
-    // OTP View
-    implementation ("com.github.aabhasr1:OtpView:v1.1.2")
-
     // Coroutines
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
@@ -66,5 +64,13 @@ dependencies {
     // Lifecycle components
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+
+    /// round imageview
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    implementation ("com.github.Dimezis:BlurView:version-2.0.3")
+
+
 
 }
